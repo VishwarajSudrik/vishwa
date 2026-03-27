@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vishwa AI Tools Hub – Your all-in-one AI assistant for app development, website building, designing, post making, content editing, and more." />
+  <meta name="theme-color" content="#6c63ff" />
+  <title>Vishwa AI Tools – Build, Design & Create with AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── Header ──────────────────────────────────────────────────────── -->
+  <header>
+    <nav>
+      <a href="#" class="logo">
+        🤖 <span class="gradient">Vishwa AI</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#assistant">AI Chat</a></li>
+        <li><a href="#features">Features</a></li>
+      </ul>
+      <a href="#assistant" class="btn-primary">
+        ✨ Try Now
+      </a>
+    </nav>
+  </header>
+
+  <!-- ─── Hero ────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="container">
+      <div class="badge">✦ Powered by Vishwa AI</div>
+      <h1>
+        Your all-in-one<br />
+        <span class="highlight">AI Tools Hub</span>
+      </h1>
+      <p>
+        Build apps, develop websites, create stunning designs, craft social posts,
+        and edit content — all with the power of AI, in one place.
+      </p>
+      <div class="hero-actions">
+        <a href="#tools" class="btn-primary">🚀 Explore Tools</a>
+        <a href="#assistant" class="btn-outline">💬 Chat with AI</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Stats ────────────────────────────────────────────────────────── -->
+  <div class="stats">
+    <div class="stat">
+      <div class="number" data-count="6" data-suffix="+">0+</div>
+      <div class="label">AI Tools</div>
+    </div>
+    <div class="stat">
+      <div class="number" data-count="50" data-suffix="+">0+</div>
+      <div class="label">Capabilities</div>
+    </div>
+    <div class="stat">
+      <div class="number" data-count="100" data-suffix="%">0%</div>
+      <div class="label">Free to Use</div>
+    </div>
+    <div class="stat">
+      <div class="number" data-count="24" data-suffix="/7">0/7</div>
+      <div class="label">Always Available</div>
+    </div>
+  </div>
+
+  <!-- ─── Tools Grid ───────────────────────────────────────────────────── -->
+  <section id="tools">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">⚡ AI Tools</div>
+        <h2>Everything you need, powered by AI</h2>
+        <p>Click any tool to explore its capabilities and launch it in the AI chat.</p>
+      </div>
+      <div class="tools-grid" id="tools-grid">
+        <!-- Populated by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── AI Assistant ─────────────────────────────────────────────────── -->
+  <section id="assistant">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">💬 AI Chat</div>
+        <h2>Talk to Vishwa AI</h2>
+        <p>Describe what you want to build or create, and the AI will guide you step by step.</p>
+      </div>
+
+      <div class="chat-wrapper">
+        <div class="chat-top-bar">
+          <div class="status-dot"></div>
+          <span>Vishwa AI — Online</span>
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+          <div class="message ai">
+            <div class="avatar ai">🤖</div>
+            <div class="bubble">
+              Hey! I'm <strong>Vishwa AI</strong> — your all-in-one creative assistant.<br /><br />
+              I can help you build <strong>apps</strong>, create <strong>websites</strong>, craft <strong>designs</strong>, write <strong>social posts</strong>, edit content, and much more.<br /><br />
+              What would you like to create today? 🚀
+            </div>
+          </div>
+        </div>
+
+        <div class="quick-prompts">
+          <button class="quick-prompt" data-prompt="Help me build a mobile app">📱 Build an app</button>
+          <button class="quick-prompt" data-prompt="Create a landing page for my business">🌐 Create a website</button>
+          <button class="quick-prompt" data-prompt="Generate a color palette for my brand">🎨 Design help</button>
+          <button class="quick-prompt" data-prompt="Write an Instagram post for my product">✍️ Make a post</button>
+          <button class="quick-prompt" data-prompt="Edit and improve my content">✂️ Edit content</button>
+        </div>
+
+        <div class="chat-input-area">
+          <textarea
+            id="chat-input"
+            placeholder="Ask anything — build an app, design a logo, write a post…"
+            rows="1"
+            aria-label="Chat input"
+          ></textarea>
+          <button id="send-btn" aria-label="Send message">➤</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Features ─────────────────────────────────────────────────────── -->
+  <section id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="tag">✨ Why Vishwa AI</div>
+        <h2>Built to help you create faster</h2>
+        <p>Everything you need to go from idea to finished product.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h4>Instant Results</h4>
+          <p>Get code, copy, and designs generated in seconds — no waiting, no limits.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h4>Task-Focused Tools</h4>
+          <p>Each AI tool is purpose-built for a specific creative workflow.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h4>Private & Secure</h4>
+          <p>Your prompts and outputs stay with you. No data is shared or stored.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h4>Multi-language</h4>
+          <p>Create and edit content in 50+ languages for global audiences.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h4>Export Ready</h4>
+          <p>Code and content are formatted and ready to use in your favourite tools.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">♾️</div>
+          <h4>Always Evolving</h4>
+          <p>New tools and capabilities are added regularly based on your needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ───────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-logo">🤖 Vishwa AI</div>
+    <p>Your all-in-one AI tools hub for building, designing, and creating.</p>
+    <p style="margin-top: 8px; font-size: 0.78rem;">Made with ❤️ by Vishwaraj</p>
+  </footer>
+
+  <!-- ─── Tool Modal ────────────────────────────────────────────────────── -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="tool-icon" id="modal-icon" style="font-size:1.8rem;"></div>
+        <h2 id="modal-title"></h2>
+      </div>
+      <p id="modal-desc"></p>
+      <ul class="modal-list" id="modal-list"></ul>
+      <div class="modal-footer">
+        <button class="btn-ghost" id="modal-close">Close</button>
+        <button class="btn-primary" id="modal-chat-btn">💬 Use in AI Chat</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

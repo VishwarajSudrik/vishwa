@@ -819,3 +819,70 @@ footer p {
     padding: 64px 0 48px;
   }
 }
+
+/* ─── Code Blocks ─────────────────────────────────────────────────────────── */
+.code-block {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0.75rem 0;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 0.85rem;
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+.code-lang {
+  color: #8b949e;
+  font-size: 0.72rem;
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.copy-btn {
+  background: #21262d;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 3px 10px;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  font-family: inherit;
+  line-height: 1.6;
+}
+
+.copy-btn:hover {
+  background: #30363d;
+  color: #fff;
+}
+
+.code-block pre {
+  margin: 0;
+  padding: 1rem;
+  overflow-x: auto;
+  max-height: 420px;
+}
+
+.code-block code {
+  color: #e6edf3;
+  font-family: 'Courier New', 'Fira Code', monospace;
+  font-size: 0.77rem;
+  line-height: 1.65;
+  white-space: pre;
+}
+
+/* Wider bubbles for AI messages that contain code */
+.message.ai .bubble {
+  max-width: min(720px, 90vw);
+}
